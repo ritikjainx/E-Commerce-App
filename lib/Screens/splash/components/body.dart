@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:needs_app/components/splashContent.dart';
+import 'package:needs_app/components/DefaultButton.dart';
+import '../components/splashContent.dart';
 import 'package:needs_app/constants.dart';
 
 int currentPage = 0;
@@ -53,6 +54,12 @@ class _BodyState extends State<Body> {
                     Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: List.generate(splashpages.length, (index) => Dot(index: index))),
+                    Spacer(),
+                    Defaultbutton(
+                      text: 'Continue',
+                      onpressed: () {},
+                    ),
+                    Spacer()
                   ],
                 ))
           ],

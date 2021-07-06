@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:needs_app/Routes.dart';
 import 'package:needs_app/constants.dart';
-import './Screens/splashScreens.dart';
+import 'Screens/splash/splashScreens.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,14 +12,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Needs',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
         scaffoldBackgroundColor: Colors.white,
         fontFamily: 'Muli',
         textTheme: TextTheme(bodyText1: TextStyle(color: kTextColor), bodyText2: TextStyle(color: kTextColor)),
       ),
-      home: SplashScreen(),
+      initialRoute: SplashScreen.routname,
+      routes: routes,
+      // home: SplashScreen(),
     );
   }
 }
