@@ -3,6 +3,9 @@
 I am making an An Ecommerce App using Flutter.
 still in progress....
 
+## Updtate
+- 6 july : Welcome screens added
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
