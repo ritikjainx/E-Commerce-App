@@ -3,7 +3,7 @@
 I am making an An Ecommerce App using Flutter.
 still in progress....
 
-## Updtate
+## Update
 - 6 july : Welcome screens added
 
 ## Getting Started
