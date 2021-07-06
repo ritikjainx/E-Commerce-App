@@ -1,6 +1,7 @@
 # needs_app
 
-A new Flutter project.
+I am making an An Ecommerce App using Flutter.
+still in progress....
 
 ## Getting Started
 
