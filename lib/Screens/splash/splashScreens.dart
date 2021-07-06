@@ -3,7 +3,7 @@ import 'package:needs_app/Screens/splash/components/body.dart';
 import 'package:needs_app/sizeConfig.dart';
 
 class SplashScreen extends StatelessWidget {
-  static const routname = 'splashscreen';
+  static const routename = 'splashscreen';
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
