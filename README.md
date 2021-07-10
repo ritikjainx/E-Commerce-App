@@ -2,9 +2,11 @@
 
 I am making an An Ecommerce App using Flutter.
 still in progress....
+you can check the final app screen in screens folder
 
-## Update
+## Updates
 - 6 july : Welcome screens added
+- 10 july : login , forget password page added
 
 ## Getting Started
 
