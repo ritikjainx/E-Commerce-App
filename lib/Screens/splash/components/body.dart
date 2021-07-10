@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:needs_app/Screens/LoginPage/loginPage.dart';
 import 'package:needs_app/components/DefaultButton.dart';
+import '../../../sizeConfig.dart';
 import '../components/splashContent.dart';
 import 'package:needs_app/constants.dart';
 
@@ -55,9 +57,14 @@ class _BodyState extends State<Body> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: List.generate(splashpages.length, (index) => Dot(index: index))),
                     Spacer(),
-                    Defaultbutton(
-                      text: 'Continue',
-                      onpressed: () {},
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+                      child: Defaultbutton(
+                        text: 'Continue',
+                        onpressed: () {
+                          Navigator.pushNamed(context, LoginPage.routename);
+                        },
+                      ),
                     ),
                     Spacer()
                   ],
