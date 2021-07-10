@@ -19,7 +19,7 @@ class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
       child: Column(
         children: [
           SizedBox(width: SizeConfig.screenWidth),
