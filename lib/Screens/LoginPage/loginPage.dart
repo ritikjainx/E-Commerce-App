@@ -8,7 +8,7 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            'Sign Up',
+            'Sign In',
           ),
         ),
         body: Body());

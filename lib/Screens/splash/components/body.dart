@@ -38,7 +38,7 @@ class _BodyState extends State<Body> {
                   setState(() {
                     currentPage = value;
                   });
-                  print(value);
+                  // print(value);
                 },
                 itemCount: splashpages.length,
                 itemBuilder: (context, int) {
