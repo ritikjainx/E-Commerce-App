@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
 import 'package:needs_app/components/DefaultButton.dart';
 import 'package:needs_app/constants.dart';
 import 'package:needs_app/sizeConfig.dart';
@@ -39,7 +40,9 @@ class Body extends StatelessWidget {
           SizedBox(height: SizeConfig.screenHeight * 0.15),
           Defaultbutton(
             text: 'Continue',
-            onpressed: () {},
+            onpressed: () {
+              Navigator.pushNamed(context, HomeScreen.routeName);
+            },
           ),
           SizedBox(height: SizeConfig.screenHeight * 0.15),
           Text(

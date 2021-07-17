@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:needs_app/Screens/Forget_Screen/forgetscreen.dart';
+import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
 import 'package:needs_app/Screens/LoginPage/loginPage.dart';
 import 'package:needs_app/Screens/OTP_Screen/OTPScreen.dart';
 import 'package:needs_app/Screens/ProfilePage/profilePaage.dart';
@@ -13,4 +14,5 @@ Map<String, WidgetBuilder> routes = {
   SignUp.routeName: (context) => SignUp(),
   ProfilePage.routeName: (context) => ProfilePage(),
   OTPscreen.routeName: (context) => OTPscreen(),
+  HomeScreen.routeName: (context) => HomeScreen(),
 };
