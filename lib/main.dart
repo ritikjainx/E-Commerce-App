@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:needs_app/Routes.dart';
+import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
 import 'package:needs_app/theme.dart';
-import 'Screens/splash/splashScreens.dart';
+// import 'Screens/splash/splashScreens.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Needs',
       theme: themeData(),
-      initialRoute: SplashScreen.routename,
+      initialRoute: HomeScreen.routeName,
       routes: routes,
     );
   }

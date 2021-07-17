@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:needs_app/constants.dart';
 
 import '../sizeConfig.dart';
 
@@ -15,6 +16,7 @@ class SvgImage extends StatelessWidget {
         child: SvgPicture.asset(
           svgPath,
           width: getProportionateScreenWidth(18),
+          color: kTextColor,
         ));
   }
 }

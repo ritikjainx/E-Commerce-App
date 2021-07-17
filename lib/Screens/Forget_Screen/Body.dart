@@ -19,11 +19,10 @@ class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
       child: Column(
         children: [
-          SizedBox(width: SizeConfig.screenWidth),
-          SizedBox(height: SizeConfig.screenHeight * 0.04),
+          SizedBox(height: SizeConfig.screenHeight * 0.04, width: SizeConfig.screenWidth),
           Text('Forget Password',
               style: TextStyle(
                 fontWeight: FontWeight.bold,

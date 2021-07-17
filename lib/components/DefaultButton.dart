@@ -19,7 +19,7 @@ class Defaultbutton extends StatelessWidget {
         onPressed: onpressed,
         child: Text(
           text,
-          style: TextStyle(color: Colors.white, fontSize: getProportionateScreenWidth(18)),
+          style: TextStyle(color: Colors.white, fontSize: getProportionateScreenHeight(18)),
         ),
       ),
     );
