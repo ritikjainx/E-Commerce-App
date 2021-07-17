@@ -2,11 +2,12 @@
 
 I am making an An Ecommerce App using Flutter.
 still in progress....
-you can check the final app screen in screens folder
+**you can check the final app screen in screens folder**
 
 ## Updates
 - 6 july : Welcome screens added
 - 10 july : login , forget password page added
+- 17 July : Create profile,OTP Screen and HomeScreen added
 
 ## Getting Started
 
