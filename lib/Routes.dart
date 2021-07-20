@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:needs_app/Screens/CartScreen/CartScreen.dart';
 import 'package:needs_app/Screens/DetailsScreen.dart/Detailscreen.dart';
 import 'package:needs_app/Screens/Forget_Screen/forgetscreen.dart';
 import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
@@ -17,4 +18,5 @@ Map<String, WidgetBuilder> routes = {
   OTPscreen.routeName: (context) => OTPscreen(),
   HomeScreen.routeName: (context) => HomeScreen(),
   DetailsScreen.routeName: (context) => DetailsScreen(),
+  CartScreen.routeName: (context) => CartScreen(),
 };
