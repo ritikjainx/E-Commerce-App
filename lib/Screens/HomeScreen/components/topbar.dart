@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:needs_app/Screens/CartScreen/CartScreen.dart';
 
 import '../../../constants.dart';
 import '../../../sizeConfig.dart';
@@ -37,7 +38,9 @@ class Topbar extends StatelessWidget {
         IconButtonWithCounter(
           svgPath: 'assets/icons/Cart Icon.svg',
           numberofItems: 0,
-          onpress: () {},
+          onpress: () {
+            Navigator.pushNamed(context, CartScreen.routeName);
+          },
         ),
         SizedBox(
           width: getProportionateScreenWidth(10),
