@@ -8,6 +8,7 @@ still in progress....
 - 6 july : Welcome screens added
 - 10 july : login , forget password page added
 - 17 July : Create profile,OTP Screen and HomeScreen added
+- 18 JUly : DetailsScreen - product details screen added 
 
 ## Getting Started
 
