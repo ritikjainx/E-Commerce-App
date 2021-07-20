@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:needs_app/Menustate.dart';
 import 'package:needs_app/sizeConfig.dart';
-
 import '../../BottomnavBar.dart';
-import '../../Menustate.dart';
 import 'Body.dart';
 
-class HomeScreen extends StatelessWidget {
-  static const routeName = '/HomeScrene';
+class Profile extends StatelessWidget {
+  static const routeName = '/profile';
+
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-      bottomNavigationBar: BottomNavBar(
-        selected: MenuState.homepage,
+      appBar: AppBar(
+        title: Text("profile"),
       ),
       body: Body(),
+      bottomNavigationBar: BottomNavBar(
+        selected: MenuState.profile,
+      ),
     );
   }
 }
