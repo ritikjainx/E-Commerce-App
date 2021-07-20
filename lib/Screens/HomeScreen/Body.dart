@@ -70,7 +70,7 @@ class Body extends StatelessWidget {
                       (index) => ProductCard(
                         demoProduct: demoProducts[index],
                         onpress: () {
-                          Navigator.pushNamed(context, DetailsScreen.routeName);
+                          Navigator.pushNamed(context, DetailsScreen.routeName, arguments: demoProducts[index]);
                         },
                       ),
                     ))),
