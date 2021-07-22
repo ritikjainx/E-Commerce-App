@@ -42,4 +42,12 @@ class CartProducts extends ChangeNotifier {
     addedproduct[index].quantity = addedproduct[index].quantity + counter;
     notifyListeners();
   }
+
+  double total() {
+    double total = 0;
+    for (int i = 0; i < addedproduct.length; i++) {
+      total = total + addedproduct[i].price * addedproduct[i].quantity;
+    }
+    return total;
+  }
 }

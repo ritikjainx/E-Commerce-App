@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:needs_app/constants.dart';
-import 'package:needs_app/sizeConfig.dart';
 import 'package:provider/provider.dart';
 import 'package:needs_app/main.dart';
-
+import 'checkoutbar.dart';
 import 'productCard.dart';
 
 class Body extends StatefulWidget {
@@ -19,7 +17,6 @@ class _BodyState extends State<Body> {
       Expanded(
         child: Consumer<CartProducts>(builder: (context, cartproducts, child) {
           return ListView.builder(
-              // itemCount: context.read<CartProducts>().addedproduct.length,
               itemCount: cartproducts.addedproduct.length,
               itemBuilder: (context, index) {
                 final productdetails = cartproducts.addedproduct;
@@ -46,17 +43,7 @@ class _BodyState extends State<Body> {
               });
         }),
       ),
-      Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Color(0xfffff5f6f9),
-              offset: Offset(0, -12),
-            ),
-          ],
-        ),
-      ),
+      CheckOutBar(),
     ]);
   }
 }
