@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:needs_app/Routes.dart';
-import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
+import 'package:needs_app/Screens/splash/splashScreens.dart';
 import 'package:needs_app/components/Cartstuff.dart';
 import 'package:needs_app/theme.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Needs',
         theme: themeData(),
-        initialRoute: HomeScreen.routeName,
+        initialRoute: SplashScreen.routename,
         routes: routes,
       ),
     );

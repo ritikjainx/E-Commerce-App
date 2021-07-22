@@ -41,7 +41,7 @@ class Body extends StatelessWidget {
           Defaultbutton(
             text: 'Continue',
             onpressed: () {
-              Navigator.pushNamed(context, HomeScreen.routeName);
+              Navigator.pushNamedAndRemoveUntil(context, HomeScreen.routeName, (route) => false);
             },
           ),
           SizedBox(height: SizeConfig.screenHeight * 0.15),

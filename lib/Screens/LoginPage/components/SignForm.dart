@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
 import 'package:needs_app/components/CustomsvgImage.dart';
 import 'package:needs_app/components/DefaultButton.dart';
 import 'package:needs_app/components/formStateErrors.dart';
@@ -37,8 +38,9 @@ class _SignFormState extends State<SignForm> {
           Defaultbutton(
             text: 'continue',
             onpressed: () {
-              if (_formKey.currentState.validate()) {
+              if (_formKey.currentState.validate() && errors.isEmpty) {
                 _formKey.currentState.save();
+                Navigator.pushNamedAndRemoveUntil(context, HomeScreen.routeName, (route) => false);
               }
             },
           ),
@@ -58,7 +60,9 @@ class _SignFormState extends State<SignForm> {
             setState(() {
               errors.add(kemailNullEroor);
             });
-          } else if (!kemailValidatorRegExp.hasMatch(value) && !errors.contains(kinvalidEmailEroor)) {
+          } else if (!kemailValidatorRegExp.hasMatch(value) &&
+              !errors.contains(kinvalidEmailEroor) &&
+              !errors.contains(kemailNullEroor)) {
             setState(() {
               errors.add(kinvalidEmailEroor);
             });
@@ -93,7 +97,7 @@ class _SignFormState extends State<SignForm> {
             setState(() {
               errors.add(kpassNullEroor);
             });
-          } else if (value.length < 8 && !errors.contains(kshortPassEroor)) {
+          } else if (value.length < 8 && !errors.contains(kshortPassEroor) && !errors.contains(kpassNullEroor)) {
             setState(() {
               errors.add(kshortPassEroor);
             });

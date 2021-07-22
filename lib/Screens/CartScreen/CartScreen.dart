@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'components/Body.dart';
 import 'package:needs_app/main.dart';
 import 'package:needs_app/sizeConfig.dart';
-import '../../BottomnavBar.dart';
+import '../../components/BottomnavBar.dart';
 import '../../Menustate.dart';
 
 class CartScreen extends StatelessWidget {

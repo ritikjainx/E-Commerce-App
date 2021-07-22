@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:needs_app/Screens/LoginPage/loginPage.dart';
 import 'package:needs_app/components/Gap.dart';
 import 'package:needs_app/constants.dart';
 import 'package:needs_app/sizeConfig.dart';
@@ -27,8 +28,9 @@ class Body extends StatelessWidget {
 class ListOptions extends StatelessWidget {
   final String text;
   final String svgicon;
+  final onpress;
 
-  const ListOptions({Key key, this.text, this.svgicon}) : super(key: key);
+  const ListOptions({Key key, this.text, this.svgicon, this.onpress}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -54,7 +56,7 @@ class ListOptions extends StatelessWidget {
           ),
           trailing: Icon(Icons.arrow_forward_ios),
           onTap: () {
-            print('pressed');
+            Navigator.pushNamedAndRemoveUntil(context, LoginPage.routename, (route) => false);
           },
         ),
       ),
