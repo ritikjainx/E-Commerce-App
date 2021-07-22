@@ -19,6 +19,7 @@ I am making an An Ecommerce App using Flutter.
 - shared prefs to keep the user logged in.
 - Add to Favuorites functionality.
 - several options inside profile page.
+- connect to firebase to integrate authentication and product data.
 
 ## Getting Started
 
