@@ -1,14 +1,22 @@
 # needs_app
 
 I am making an An Ecommerce App using Flutter.
-still in progress....
-**you can check the final app screen in screens folder**
+**Check the final app screens in screens folder**
+**Chech the app on your android phone through APK provided above**
 
 ## Updates
 - 6 july : Welcome screens added
 - 10 july : login , forget password page added
 - 17 July : Create profile,OTP Screen and HomeScreen added
-- 18 JUly : DetailsScreen - product details screen added 
+- 18 July : DetailsScreen - product details screen added 
+- 19 July : Profle screen, Bottom Nav Bar with every screen and navigations added
+- 22 July : cartscreen adeed, navigation fixed, spottable bugs fixed.
+
+
+## Future Scope and TO-DO : 
+- shared prefs to keep the user logged in.
+- Add to Favuorites functionality.
+- several options inside profile page.
 
 ## Getting Started
 
