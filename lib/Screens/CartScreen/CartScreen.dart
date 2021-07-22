@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'Body.dart';
+import 'package:provider/provider.dart';
+import 'components/Body.dart';
+import 'package:needs_app/main.dart';
 
 class CartScreen extends StatelessWidget {
   static const routeName = '/cart';
@@ -15,7 +16,7 @@ class CartScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 children: [
                   TextSpan(
-                    text: '\n 4 Items',
+                    text: '\n ${context.read<CartProducts>().addedproduct.length} Items',
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.normal),
                   )
                 ],

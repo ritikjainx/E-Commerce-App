@@ -1,8 +1,9 @@
 class CartStuff {
   final String image;
-  final String titile;
+  final String title;
   final double price;
-  final int quantity;
+  int quantity;
+  final int id;
 
-  CartStuff({this.quantity, this.image, this.titile, this.price});
+  CartStuff({this.id, this.quantity, this.image, this.title, this.price});
 }

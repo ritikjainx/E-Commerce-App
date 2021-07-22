@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:needs_app/components/Cartstuff.dart';
 import 'package:needs_app/components/Product.dart';
 import 'package:needs_app/components/DefaultButton.dart';
 import 'package:needs_app/sizeConfig.dart';
@@ -32,7 +33,9 @@ class Body extends StatelessWidget {
               ColorDots(product: product),
             ],
           ),
-          AddToCart()
+          AddToCart(
+            product: product,
+          )
         ],
       ),
     );
@@ -90,11 +93,30 @@ class _AddToCartState extends State<AddToCart> {
               child: Defaultbutton(
                 text: 'Add To Cart',
                 onpressed: () {
-                  context
-                      .read<CartProducts>()
-                      .addproducts(widget.product.images[0], widget.product.price, widget.product.title, counter);
-                  ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text('$counter ${widget.product.title} added to cart')));
+                  if (counter != 0) {
+                    List<CartStuff> addedproductscopy = context.read<CartProducts>().addedproduct;
+                    int count = 0;
+                    int index;
+                    for (int i = 0; i < addedproductscopy.length; i++) {
+                      if (addedproductscopy[i].id == widget.product.id) {
+                        count++;
+                        index = i;
+                      }
+                    }
+                    if (count == 1) {
+                      context.read<CartProducts>().counter(counter: counter, index: index);
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: Text('$counter more ${widget.product.title} added to cart'),
+                      ));
+                    } else {
+                      context.read<CartProducts>().addproducts(widget.product.images.first, widget.product.price,
+                          widget.product.title, counter, widget.product.id);
+                      ScaffoldMessenger.of(context)
+                          .showSnackBar(SnackBar(content: Text('$counter ${widget.product.title} added to cart')));
+                    }
+                  } else
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(SnackBar(content: Text('please select number of items to be added')));
                 },
               ),
             ),

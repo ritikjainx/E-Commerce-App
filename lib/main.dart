@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:needs_app/Routes.dart';
 import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
 import 'package:needs_app/components/Cartstuff.dart';
-import 'package:needs_app/components/Product.dart';
 import 'package:needs_app/theme.dart';
 import 'package:provider/provider.dart';
-// import 'Screens/splash/splashScreens.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,13 +28,18 @@ class MyApp extends StatelessWidget {
 class CartProducts extends ChangeNotifier {
   List<CartStuff> addedproduct = [];
 
-  void addproducts(String imagepath, double price, String title, int qty) {
-    addedproduct.add(CartStuff(image: imagepath, price: price, titile: title, quantity: qty));
+  void addproducts(String imagepath, double price, String title, int qty, int id) {
+    addedproduct.add(CartStuff(image: imagepath, price: price, title: title, quantity: qty, id: id));
     notifyListeners();
   }
 
   void removeproduct(index) {
     addedproduct.removeAt(index);
+    notifyListeners();
+  }
+
+  void counter({int counter, int index}) {
+    addedproduct[index].quantity = addedproduct[index].quantity + counter;
     notifyListeners();
   }
 }
