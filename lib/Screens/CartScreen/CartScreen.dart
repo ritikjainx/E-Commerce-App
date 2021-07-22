@@ -5,8 +5,6 @@ import 'package:needs_app/main.dart';
 import 'package:needs_app/sizeConfig.dart';
 import '../../BottomnavBar.dart';
 import '../../Menustate.dart';
-import 'Body.dart';
-
 
 class CartScreen extends StatelessWidget {
   static const routeName = '/cart';
