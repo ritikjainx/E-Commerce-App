@@ -1,4 +1,4 @@
-# needs_app
+# Needs_App - an Ecommerce UI App
 
 I am making an An Ecommerce App using Flutter.
 
