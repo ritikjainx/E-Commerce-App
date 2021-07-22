@@ -3,7 +3,8 @@
 I am making an An Ecommerce App using Flutter.
 
 **Check the final app screens in screens folder**
-**Chech the app on your android phone through APK provided above**
+
+**Check the final app on your android phone through APK provided above**
 
 ## Updates
 - 6 july : Welcome screens added
