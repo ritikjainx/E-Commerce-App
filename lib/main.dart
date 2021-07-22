@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:needs_app/Routes.dart';
-import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
+import 'package:needs_app/Screens/splash/splashScreens.dart';
 import 'package:needs_app/components/Cartstuff.dart';
 import 'package:needs_app/theme.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Needs',
         theme: themeData(),
-        initialRoute: HomeScreen.routeName,
+        initialRoute: SplashScreen.routename,
         routes: routes,
       ),
     );
@@ -41,5 +41,13 @@ class CartProducts extends ChangeNotifier {
   void counter({int counter, int index}) {
     addedproduct[index].quantity = addedproduct[index].quantity + counter;
     notifyListeners();
+  }
+
+  double total() {
+    double total = 0;
+    for (int i = 0; i < addedproduct.length; i++) {
+      total = total + addedproduct[i].price * addedproduct[i].quantity;
+    }
+    return total;
   }
 }

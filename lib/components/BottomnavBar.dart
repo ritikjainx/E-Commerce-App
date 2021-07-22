@@ -5,8 +5,8 @@ import 'package:needs_app/Screens/HomeScreen/homeScreen.dart';
 import 'package:needs_app/Screens/profile/profile.dart';
 import 'package:needs_app/sizeConfig.dart';
 
-import 'Menustate.dart';
-import 'constants.dart';
+import '../Menustate.dart';
+import '../constants.dart';
 
 class BottomNavBar extends StatelessWidget {
   final selected;
@@ -35,7 +35,7 @@ class BottomNavBar extends StatelessWidget {
                   color: selected == MenuState.homepage ? kPrimaryColor : kTextColor.withOpacity(0.6),
                 ),
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, HomeScreen.routeName);
+                  Navigator.pushNamedAndRemoveUntil(context, HomeScreen.routeName, (route) => false);
                 }),
             IconButton(
                 icon: SvgPicture.asset(
@@ -51,7 +51,9 @@ class BottomNavBar extends StatelessWidget {
                   color: selected == MenuState.cart ? kPrimaryColor : kTextColor.withOpacity(0.6),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, CartScreen.routeName);
+                  if (ModalRoute.of(context).settings.name != CartScreen.routeName)
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, CartScreen.routeName, ModalRoute.withName(HomeScreen.routeName));
                 }),
             IconButton(
                 icon: SvgPicture.asset(
@@ -60,7 +62,9 @@ class BottomNavBar extends StatelessWidget {
                   color: selected == MenuState.profile ? kPrimaryColor : kTextColor.withOpacity(0.6),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, Profile.routeName);
+                  if (ModalRoute.of(context).settings.name != Profile.routeName)
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, Profile.routeName, ModalRoute.withName(HomeScreen.routeName));
                 }),
           ],
         ),
