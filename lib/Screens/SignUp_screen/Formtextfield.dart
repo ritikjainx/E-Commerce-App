@@ -18,7 +18,7 @@ class _FormTextFeildState extends State<FormTextFeild> {
   final _formkey = GlobalKey<FormState>();
   List<String> errors = [];
   String password;
-
+  bool showpass = true;
   String email;
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,25 @@ class _FormTextFeildState extends State<FormTextFeild> {
           buildPassFormField(),
           Gap(h: 30),
           buildConfirmPassFormField(),
-          Gap(h: 40),
+          GestureDetector(
+            onTap: () {
+              print('pressed');
+              setState(() {
+                showpass = !showpass;
+              });
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(right: 20),
+              child: Align(
+                alignment: Alignment.topRight,
+                child: Text(
+                  'Show Password',
+                  style: TextStyle(decoration: TextDecoration.underline, fontSize: getProportionateScreenHeight(10)),
+                ),
+              ),
+            ),
+          ),
+          Gap(h: 30),
           FormStateError(errors: errors),
           Gap(h: 20),
           Defaultbutton(
@@ -66,6 +84,7 @@ class _FormTextFeildState extends State<FormTextFeild> {
 
   TextFormField buildConfirmPassFormField() {
     return TextFormField(
+      obscureText: showpass,
       validator: (value) {
         if (value != password && !errors.contains(kmatchPassEroor)) {
           setState(() {
@@ -91,6 +110,7 @@ class _FormTextFeildState extends State<FormTextFeild> {
 
   TextFormField buildPassFormField() {
     return TextFormField(
+      obscureText: showpass,
       validator: (value) {
         if (value.isEmpty && !errors.contains(kpassNullEroor)) {
           setState(() {

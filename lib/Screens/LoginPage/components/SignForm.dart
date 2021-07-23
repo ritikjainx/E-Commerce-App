@@ -17,6 +17,7 @@ class _SignFormState extends State<SignForm> {
   List<String> errors = [];
   String email;
   String password;
+  bool showpass = true;
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -28,6 +29,24 @@ class _SignFormState extends State<SignForm> {
             height: getProportionateScreenHeight(20),
           ),
           passwordTextFormField(),
+          GestureDetector(
+            onTap: () {
+              print('pressed');
+              setState(() {
+                showpass = !showpass;
+              });
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(right: 20),
+              child: Align(
+                alignment: Alignment.topRight,
+                child: Text(
+                  'Show Password',
+                  style: TextStyle(decoration: TextDecoration.underline, fontSize: getProportionateScreenHeight(10)),
+                ),
+              ),
+            ),
+          ),
           SizedBox(
             height: getProportionateScreenHeight(20),
           ),
@@ -116,7 +135,7 @@ class _SignFormState extends State<SignForm> {
           }
           return null;
         },
-        obscureText: true,
+        obscureText: showpass,
         keyboardType: TextInputType.emailAddress,
         decoration: InputDecoration(
           hintText: 'Enter your password',
