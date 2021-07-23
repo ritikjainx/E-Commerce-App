@@ -4,7 +4,7 @@ I am making an An Ecommerce App using Flutter.
 
 **Check the final app screens in screens folder**
 
-**Check the final app on your android phone through APK provided above**
+**Check the final app on your android phone through APK**
 
 ## Updates
 - 6 july : Welcome screens added
@@ -19,6 +19,7 @@ I am making an An Ecommerce App using Flutter.
 - shared prefs to keep the user logged in.
 - Add to Favuorites functionality.
 - several options inside profile page.
+- connect to firebase to integrate authentication and product data.
 
 ## Getting Started
 
