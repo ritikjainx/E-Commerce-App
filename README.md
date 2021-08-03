@@ -7,7 +7,8 @@ I am making an An Ecommerce App using Flutter.
 **Check the final app on your android phone through APK**
 
 ##Screens
-![Welcome](https://user-images.githubusercontent.com/61776980/128008306-6bfc16b7-acd9-40d3-8c2c-87196b638154.png)
+<img src="https://user-images.githubusercontent.com/61776980/124382475-45b45600-dce5-11eb-8a8d-82781a99e086.png" width="300" height="600">
+![Welcome]('https://user-images.githubusercontent.com/61776980/128008306-6bfc16b7-acd9-40d3-8c2c-87196b638154.png' width="300" height="600")
 ![Sign In](https://user-images.githubusercontent.com/61776980/128008324-8cf08995-8354-4dd3-8fd2-7d9be52ce981.png)
 ![Forget Password](https://user-images.githubusercontent.com/61776980/128008325-6c69e55b-e854-4f8c-9ec9-150f6e9f9a06.png)
 ![Register Account/ Signup](https://user-images.githubusercontent.com/61776980/128008326-fbf5a8b2-644b-4a5e-a881-d40fcb76d83b.png)
