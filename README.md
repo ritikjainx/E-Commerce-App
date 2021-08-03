@@ -6,10 +6,13 @@ I am making an An Ecommerce App using Flutter.
 
 **Check the final app on your android phone through APK**
 
-![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 54 49](https://user-images.githubusercontent.com/61776980/128012328-8b08ca5d-adb9-4a52-9fec-1b769e89d499.png =100x20)
-![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 54 53](https://user-images.githubusercontent.com/61776980/128012367-a2604b57-0473-42df-b1a7-abec197d6398.png =100x20)
-![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 54 55](https://user-images.githubusercontent.com/61776980/128012374-e30f1913-2eb1-4563-9b2e-23849a80e04f.png =100x20)
-![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 55 06](https://user-images.githubusercontent.com/61776980/128012377-f3c0a26b-8a45-4fc2-aa12-3ca3c398cf09.png =100x20)
+
+<img src="https://your-image-url.type" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/61776980/128012328-8b08ca5d-adb9-4a52-9fec-1b769e89d499.png" width="400">
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 54 49](https://user-images.githubusercontent.com/61776980/128012328-8b08ca5d-adb9-4a52-9fec-1b769e89d499.png )
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 54 53](https://user-images.githubusercontent.com/61776980/128012367-a2604b57-0473-42df-b1a7-abec197d6398.png )
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 54 55](https://user-images.githubusercontent.com/61776980/128012374-e30f1913-2eb1-4563-9b2e-23849a80e04f.png )
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 55 06](https://user-images.githubusercontent.com/61776980/128012377-f3c0a26b-8a45-4fc2-aa12-3ca3c398cf09.png )
 ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 55 38](https://user-images.githubusercontent.com/61776980/128012379-2f171a5d-f2b5-4007-92d9-6ac094eec62e.png)
 ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 55 59](https://user-images.githubusercontent.com/61776980/128012381-d2fd9b47-981f-4286-a5f9-c34bc63e4099.png)
 ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-08-03 at 16 56 05](https://user-images.githubusercontent.com/61776980/128012383-6fc414fd-1400-4780-9fe9-6c0d27a6f220.png)
