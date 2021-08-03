@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:needs_app/components/Product.dart';
+import 'package:needs_app/Modals/Product.dart';
 
 import '../../../constants.dart';
 import '../../../sizeConfig.dart';
@@ -37,7 +37,6 @@ class _ProductImageState extends State<ProductImage> {
 
   GestureDetector imagePrevCard(int index) => GestureDetector(
         onTap: () {
-          print('pressed');
           setState(() {
             selected = index;
           });

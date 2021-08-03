@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:needs_app/components/Cartstuff.dart';
+import 'package:needs_app/Modals/Cartstuff.dart';
 
 import '../../../constants.dart';
 import '../../../sizeConfig.dart';

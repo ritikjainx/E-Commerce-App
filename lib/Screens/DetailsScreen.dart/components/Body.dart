@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:needs_app/components/Cartstuff.dart';
-import 'package:needs_app/components/Product.dart';
+import 'package:needs_app/Modals/Cartstuff.dart';
+import 'package:needs_app/Modals/Product.dart';
 import 'package:needs_app/components/DefaultButton.dart';
 import 'package:needs_app/sizeConfig.dart';
 import 'package:needs_app/main.dart';

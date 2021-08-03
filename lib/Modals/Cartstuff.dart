@@ -1,3 +1,5 @@
+// This class defines the structure for items that are added to the cart
+
 class CartStuff {
   final String image;
   final String title;

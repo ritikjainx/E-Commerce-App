@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:needs_app/Screens/DetailsScreen.dart/Detailscreen.dart';
-import 'package:needs_app/components/Product.dart';
+import 'package:needs_app/Modals/Product.dart';
 import 'package:needs_app/components/Gap.dart';
 import 'package:needs_app/sizeConfig.dart';
 import 'components/DicountCard.dart';

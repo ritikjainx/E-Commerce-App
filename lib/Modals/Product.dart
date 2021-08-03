@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//this class defines the structure for all products to be added in the app 
+
 class Product {
   final int id;
   final String title, description;
