@@ -1,6 +1,6 @@
 # Needs_App - an Ecommerce UI App
 
-I am making an An Ecommerce App using Flutter.
+Made an An Ecommerce UI App using Flutter.
 
 **final screens also uploaded in screens folder**
 
